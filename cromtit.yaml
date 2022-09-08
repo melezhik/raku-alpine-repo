@@ -1,13 +1,13 @@
-# list of Tomtit projects
 projects:
-  rakudo:
-    path: ~/projects/rakudo
-  r3:
-    path: ~/projects/r3tool
-    #crontab: "30 * * * *"
-    action: pull html-report
-    #options: --no_index_update
-    before:
+  raku-alpine-repo:
+    path: https://github.com/melezhik/raku-alpine-repo.git
+    action: hello-world
+    hosts:
       -
-        name: rakudo
-        action: pull install 
+        url: https://sparrowhub.io:4000
+        sparrowdo:
+          docker: raku-alpine-repo
+          #bootstrap: true
+          no_sudo: true
+
+
