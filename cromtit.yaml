@@ -1,13 +1,13 @@
 projects:
   raku-alpine-repo:
     path: https://github.com/melezhik/raku-alpine-repo.git
-    action: hello-world
+    action: apk-setup
     hosts:
       -
         url: https://sparrowhub.io:4000
         sparrowdo:
           docker: raku-alpine-repo
-          #bootstrap: true
+          bootstrap: false
           no_sudo: true
 
 
