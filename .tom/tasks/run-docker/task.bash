@@ -1,7 +1,10 @@
-set -e
-set -x
+name=$(config name)
 
-docker run  --rm -td \
---add-host=host.docker.internal:host-gateway \
---name raku-alpine-repo \
-alpine
+status=$(docker inspect --format '{{json .State.Running}}' $name)
+
+if [[ -n $string ]] || [[ $status != "true" ]] ; then
+  set -x
+  docker run  --rm -td \
+  --add-host=host.docker.internal:host-gateway \
+  --name $name alpine
+fi
