@@ -12,16 +12,16 @@ projects:
   raku-alpine-repo:
     path: https://github.com/melezhik/raku-alpine-repo.git
     title: setup alpine
-    hosts:
-      -
-        url: https://sparky.sparrowhub.io
+    #hosts:
+    #  -
+    #    url: https://sparky.sparrowhub.io
     action: apk-setup
     before: 
       -
         name: run_docker
-    sparrowdo:
-      docker: raku-alpine-repo
-      bootstrap: true
-      no_sudo: true
+    #sparrowdo:
+    #  docker: raku-alpine-repo
+    #  bootstrap: true
+    #  no_sudo: true
 
 
