@@ -2,7 +2,9 @@ projects:
   run_docker:
     path: https://github.com/melezhik/raku-alpine-repo.git
     title: run docker
-    url: https://sparky.sparrowhub.io
+    hosts:
+      -
+        url: https://sparky.sparrowhub.io
     title: run-docker alpine
     action: run-docker
     sparrowdo:
