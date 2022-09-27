@@ -21,7 +21,7 @@ projects:
           docker: raku-alpine-repo
           bootstrap: true
           no_sudo: true
-        action: apk-setup
+        action: apk-setup raku-cromtit-alpine-package
     timeout: 1000
     before: 
       -
