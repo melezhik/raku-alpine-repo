@@ -6,7 +6,7 @@ task-run "raku-MIME-Base64 package", "sparkyci-tool-apkbuild", %(
   pkgdesc => "MIME::Base64 - Encoding and decoding Base64 ASCII strings",
   source => "https://360.zef.pm/M/IM/MIME_BASE64/e9be34fd486db0c70a7d4aab4bee21754214c2b2.tar.gz",
   url => "https://github.com/raku-community-modules/MIME-Base64",
-  builddir => 'dist',
+  builddir => 'MIME-Base64-1.2.3',
   depends => "raku-MIME-Base64",
   license => "Artistic-2.0",
 );
