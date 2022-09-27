@@ -5,6 +5,7 @@ projects:
     hosts:
       -
         url: https://sparky.sparrowhub.io
+        queue-id: rar
     title: run-docker alpine
     action: run-docker
     sparrowdo:
@@ -15,6 +16,7 @@ projects:
     hosts:
       -
         url: https://sparky.sparrowhub.io
+        queue-id: rar
         sparrowdo:
           docker: raku-alpine-repo
           bootstrap: true
