@@ -22,6 +22,7 @@ projects:
           bootstrap: true
           no_sudo: true
         action: apk-setup
+    timeout: 1000
     before: 
       -
         name: run_docker
