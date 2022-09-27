@@ -4,7 +4,7 @@ task-run "raku-MIME-Base64 package", "sparkyci-tool-apkbuild", %(
   pkgver => "1.2.3",
   pkgrel => 1,
   pkgdesc => "MIME::Base64 - Encoding and decoding Base64 ASCII strings",
-  source => "https://360.zef.pm/M/IM/MIME_BASE64/e9be34fd486db0c70a7d4aab4bee21754214c2b2.tar.gz"
+  source => "https://360.zef.pm/M/IM/MIME_BASE64/e9be34fd486db0c70a7d4aab4bee21754214c2b2.tar.gz",
   url => "https://github.com/raku-community-modules/MIME-Base64",
   builddir => 'dist',
   depends => "raku-MIME-Base64",
@@ -17,7 +17,7 @@ task-run "raku-Yamlish package", "sparkyci-tool-apkbuild", %(
   pkgver => "0.0.6",
   pkgrel => 1,
   pkgdesc => "YAMLish - a YAML parser/emitter written in pure raku",
-  source => "https://github.com/Leont/yamlish/archive/471ea987df416c6d8f8792652ed34a274ed857b4.zip"
+  source => "https://github.com/Leont/yamlish/archive/471ea987df416c6d8f8792652ed34a274ed857b4.zip",
   url => "https://github.com/Leont/yamlish",
   builddir => 'yamlish-471ea987df416c6d8f8792652ed34a274ed857b4',
   depends => "raku-MIME-Base64",
