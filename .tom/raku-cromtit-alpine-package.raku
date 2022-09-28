@@ -17,9 +17,9 @@ task-run "raku-Yamlish package", "sparkyci-tool-apkbuild", %(
   pkgver => "0.0.6",
   pkgrel => 1,
   pkgdesc => "YAMLish - a YAML parser/emitter written in pure raku",
-  source => "https://raw.githubusercontent.com/raku/REA/main/archive/Y/YAMLish/YAMLish%3Aver%3C0.0.6%3E%3Aauth%3Cgithub%3ALeont%3E.tar.gz",
+  source => "https://github.com/Leont/yamlish/tarball/471ea98/",
   url => "https://github.com/Leont/yamlish",
-  builddir => 'yamlish-master',
+  builddir => 'Leont-yamlish-471ea98',
   depends => "raku-MIME-Base64",
   license => "Artistic-2.0",
 );
