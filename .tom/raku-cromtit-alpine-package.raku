@@ -1,3 +1,15 @@
+task-run "raku-Data-Dump package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-Data-Dump",
+  pkgver => "0.0.14",
+  pkgrel => 1,
+  pkgdesc => "Data::Dump - that's right folks, here's a quicky for your data dump needs",
+  source => "https://360.zef.pm/D/AT/DATA_DUMP/4fdb60b6821124e74c9cd87dc0f0aa0ca8c54005.tar.gz",
+  url => "https://github.com/tony-o/perl6-data-dump",
+  builddir => '',
+  license => "Artistic-2.0",
+);
+
 task-run "raku-MIME-Base64 package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-MIME-Base64",
