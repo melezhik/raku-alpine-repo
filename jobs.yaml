@@ -12,7 +12,7 @@ projects:
       no_sudo: true
   raku-alpine-repo:
     path: https://github.com/melezhik/raku-alpine-repo.git
-    title: setup alpine
+    title: build raku alpine package
     hosts:
       -
         url: https://sparky.sparrowhub.io
