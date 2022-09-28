@@ -1,0 +1,4 @@
+    1  curl 127.0.0.1/x86_64/APKINDEX.tar.gz -o /dev/null  -D - -s
+   11  ln -s /home/builder/.abuild/builder-633371ab.rsa.pub /home/builder/packages/raku-packages/
+   24  curl 127.0.0.1/builder-633371ab.rsa.pub
+   25  
