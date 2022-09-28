@@ -1,0 +1,30 @@
+# under builder
+su - builder  abuild-sign /home/builder/packages/raku-packages/x86_64/APKINDEX.tar.gz
+
+# under root
+apk add nginx
+ln -s /home/builder/.abuild/builder-633371ab.rsa.pub /home/builder/packages/raku-packages/
+# set nginx.conf
+cat << HERE > /etc/nginx/http.d/default.conf
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	root /home/builder/packages/raku-packages/;
+	# Everything is a 404
+	location / {
+	#	return 404;
+		autoindex on;
+	}
+
+	# You may need this to prevent return 404 recursion.
+	location = /404.html {
+		internal;
+	}
+}
+HERE
+nohup nginx -g "daemon off;" &
+
+# test
+curl 127.0.0.1/x86_64/APKINDEX.tar.gz -o /dev/null  -D - -s
+curl 127.0.0.1/builder-633371ab.rsa.pub
