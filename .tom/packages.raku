@@ -5,6 +5,7 @@ task-run "raku-Compress-Zlib-Raw package", "sparkyci-tool-apkbuild", %(
   pkgrel => 1,
   pkgdesc => "Low-level interface to zlib",
   source => "https://github.com/retupmoca/P6-Compress-Zlib-Raw/archive/0b836689479c497484c5c9794647660a526dd15e.zip",
+  source_extension => "zip",
   url => "https://github.com/retupmoca/P6-Compress-Zlib-Raw",
   depends => "zlib-dev",
   builddir => 'P6-Compress-Zlib-Raw-0b836689479c497484c5c9794647660a526dd15e/',
