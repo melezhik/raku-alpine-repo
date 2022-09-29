@@ -42,4 +42,13 @@ echo "https://alpine.sparrowhub.io" | tee -a /etc/apk/repositories
 # Download and store our signing key to /etc/apk/keys
 wget -P /etc/apk/keys/ https://alpine.sparrowhub.io/builder-6335eaba.rsa.pub
 
+apk update
+apk add raku-Cromtit
+
+export PATH=/usr/share/rakudo/vendor/bin/:$PATH
+
+cromt --conf=job.yaml 
+
 # https://www.erianna.com/creating-a-alpine-linux-repository/
+
+
