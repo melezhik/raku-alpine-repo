@@ -21,7 +21,8 @@ projects:
           docker: raku-alpine-repo
           bootstrap: true
           no_sudo: true
-        action: apk-setup packages nginx
+        #action: apk-setup packages nginx
+        action: apk-setup packages
         #action: nginx
     timeout: 1000
     before: 
