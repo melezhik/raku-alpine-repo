@@ -41,3 +41,6 @@ echo "https://apk.example.com/v3.6/main" | tee -a /etc/apk/repositories
 
 # Download and store our signing key to /etc/apk/keys
 wget -P /etc/apk/keys/ https://apk.example.com/alpine@example.com-59ea3c02.rsa.pub
+
+
+# https://www.erianna.com/creating-a-alpine-linux-repository/
