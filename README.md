@@ -21,7 +21,7 @@ apk add raku-Cromtit
 
 # PATH
 
-Alpine packackes for Raku modules install `bin/` into `/usr/share/rakudo/vendor/bin/`, so:
+Alpine installs `bin/` scripts into `/usr/share/rakudo/vendor/bin/`, so:
 
 ```
 export PATH=/usr/share/rakudo/vendor/bin/:$PATH
