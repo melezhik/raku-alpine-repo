@@ -28,3 +28,16 @@ nohup nginx -g "daemon off;" &
 # test
 curl 127.0.0.1/x86_64/APKINDEX.tar.gz -o /dev/null  -D - -s
 curl 127.0.0.1/builder-633371ab.rsa.pub
+
+
+
+# client side
+
+# Install wget if it isn't installed
+apk add wget --no-cache
+
+# Add our repository to `/etc/apk/repositories
+echo "https://apk.example.com/v3.6/main" | tee -a /etc/apk/repositories
+
+# Download and store our signing key to /etc/apk/keys
+wget -P /etc/apk/keys/ https://apk.example.com/alpine@example.com-59ea3c02.rsa.pub
