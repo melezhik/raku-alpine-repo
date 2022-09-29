@@ -21,8 +21,8 @@ projects:
           docker: raku-alpine-repo
           bootstrap: true
           no_sudo: true
-        #action: apk-setup raku-cromtit-alpine-package nginx
-        action: nginx
+        action: apk-setup raku-cromtit-alpine-package nginx
+        #action: nginx
     timeout: 1000
     before: 
       -
