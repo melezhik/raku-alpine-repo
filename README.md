@@ -2,7 +2,7 @@
 
 Build Alpine packages for Raku module. WIP.
 
-# USING Repo
+# Using Repo
 
 ```bash
 apk add wget --no-cache
@@ -26,3 +26,7 @@ Alpine packackes for Raku modules install `bin/` into `/usr/share/rakudo/vendor/
 ```
 export PATH=/usr/share/rakudo/vendor/bin/:$PATH
 ```
+
+# Packages list
+
+See [packages.raku](https://github.com/melezhik/raku-alpine-repo/blob/main/.tom/packages.raku)
