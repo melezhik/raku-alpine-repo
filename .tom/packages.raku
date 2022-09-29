@@ -1,3 +1,17 @@
+task-run "raku-Path-Util package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-Path-Util",
+  pkgver => "2017.04.30",
+  pkgrel => 1,
+  pkgdesc => "Break up a file path into its components",
+  source => "https://github.com/jaffa4/pathutil/archive/a16707857db3164e84f4c0ef5c38d524e0f2d9af.zip",
+  source_extension => "zip",
+  url => "https://github.com/jaffa4/pathutil",
+  depends => "",
+  builddir => 'pathutil-a16707857db3164e84f4c0ef5c38d524e0f2d9af/',
+  license => "Artistic-2.0",
+);
+
 task-run "raku-Compress-Zlib-Raw package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Compress-Zlib-Raw",
