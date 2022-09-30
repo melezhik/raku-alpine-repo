@@ -31,7 +31,6 @@ to use the fresh version, install from `edge` repository:
 
 ```
 apk add rakudo --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
-apk add rakudo
 ```
 
 # PATH
