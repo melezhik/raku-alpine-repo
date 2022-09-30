@@ -18,14 +18,13 @@ task-run "raku-Ini-Storage package", "sparkyci-tool-apkbuild", %(
   pkgver => "0.8",
   pkgrel => 1,
   pkgdesc => "A Raku module to store data in ini files",
-  source => "https://github.com/jaffa4/inistorage/archive/2c03be07f4ed37ed9d8fbd5f5ba064122db77c16.zip"
+  source => "https://github.com/jaffa4/inistorage/archive/2c03be07f4ed37ed9d8fbd5f5ba064122db77c16.zip",
   source_extension => "zip",
   url => "https://github.com/jaffa4/inistorage",
   depends => "raku-Path-Util",
   builddir => 'inistorage-2c03be07f4ed37ed9d8fbd5f5ba064122db77c16/',
   license => "Artistic-2.0",
 );
-
 
 task-run "raku-Compress-Zlib-Raw package", "sparkyci-tool-apkbuild", %(
   action => "create",
