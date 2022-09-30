@@ -1,3 +1,15 @@
+task-run "raku-Test-Async package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-Test-Async",
+  pkgver => "0.0.16",
+  pkgrel => 1,
+  pkgdesc => "Test::Async - asynchronous, thread-sage testing",
+  source => "https://cpan.metacpan.org/authors/id//V/VR/VRURG/Perl6/Test-Async-v0.0.16.tar.gz",
+  url => "https://github.com/vrurg/raku-Test-Async",
+  builddir => "dist",
+  license => "Artistic-2.0",
+);
+
 task-run "raku-Zef package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Zef",
