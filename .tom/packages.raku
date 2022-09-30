@@ -40,6 +40,18 @@ task-run "raku-Compress-Zlib-Raw package", "sparkyci-tool-apkbuild", %(
   license => "Artistic-2.0",
 );
 
+task-run "raku-IP-Addr package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-IP-Addr",
+  pkgver => "0.0.7",
+  pkgrel => 1,
+  pkgdesc => "IP::Addr - dealing with IPv4/IPv6 addresses",
+  source => "https://360.zef.pm/I/P_/IP_ADDR/a7c694af0b850be5f6db3b22024eeaad89d1b8a5.tar.gz",
+  url => "https://github.com/vrurg/raku-IP-Addr",
+  builddir => 'dist',
+  license => "Artistic-2.0",
+);
+
 task-run "raku-Data-Dump package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Data-Dump",
