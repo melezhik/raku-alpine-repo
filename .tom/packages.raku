@@ -1,7 +1,7 @@
 task-run "raku-Path-Util package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Path-Util",
-  pkgver => "*",
+  pkgver => "2017.04.30",
   pkgrel => 2,
   pkgdesc => "Break up a file path into its components",
   source => "https://github.com/jaffa4/pathutil/archive/a16707857db3164e84f4c0ef5c38d524e0f2d9af.zip",
