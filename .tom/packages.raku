@@ -5,7 +5,6 @@ task-run "raku-Zef package", "sparkyci-tool-apkbuild", %(
   pkgrel => 1,
   pkgdesc => "Raku Module Management",
   source => "https://github.com/ugexe/zef/archive/refs/tags/v0.14.2.tar.gz",
-  source_extension => "zip",
   url => "https://github.com/ugexe/zef",
   depends => "",
   builddir => 'zef-0.14.2',
