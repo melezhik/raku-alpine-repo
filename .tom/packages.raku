@@ -40,6 +40,18 @@ task-run "raku-Compress-Zlib-Raw package", "sparkyci-tool-apkbuild", %(
   license => "Artistic-2.0",
 );
 
+task-run "raku-Envy package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-Envy",
+  pkgver => "0.0.1",
+  pkgrel => 1,
+  pkgdesc => "raku virtual cur",
+  source => "https://360.zef.pm/E/NV/ENVY/cf8112246d1cf088f8775001c69be4b6970f0b3e.tar.gz",
+  url => "https://github.com/tony-o/envy",
+  builddir => 'dist',
+  license => "Artistic-2.0",
+);
+
 task-run "raku-IP-Addr package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-IP-Addr",
