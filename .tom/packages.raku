@@ -1,3 +1,15 @@
+task-run "raku-Timezones-US package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-Timezones-US",
+  pkgver => "0.0.1",
+  pkgrel => 1,
+  pkgdesc => "Timezones::US - Provides timezone data for the US for use with modules 'DateTime::US' and 'LocalTime::US'",
+  source => "https://360.zef.pm/T/IM/TIMEZONES_US/ab65cbc5c1ec78af6dc6952f1f76126954e17ad8.tar.gz",
+  url => "https://github.com/tbrowder/Timezones-US",
+  builddir => "Timezones-US-0.0.1",
+  license => "Artistic-2.0",
+);
+
 task-run "raku-Test-Async package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Test-Async",
