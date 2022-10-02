@@ -1,29 +1,20 @@
 projects:
   run_docker:
     path: https://github.com/melezhik/raku-alpine-repo.git
-    title: run docker
-    hosts:
-      -
-        url: https://sparky.sparrowhub.io
-        queue-id: rar
-    title: run-docker alpine
+    title: start docker
     action: run-docker
+    queue-id: rar
     sparrowdo:
       no_sudo: true
   raku-alpine-repo:
     path: https://github.com/melezhik/raku-alpine-repo.git
-    title: build raku alpine package
-    hosts:
-      -
-        url: https://sparky.sparrowhub.io
-        queue-id: rar
-        sparrowdo:
-          docker: raku-alpine-repo
-          bootstrap: true
-          no_sudo: true
-        action: apk-setup packages nginx
-        #action: apk-setup packages
-        #action: nginx
+    title: build packages
+    action: apk-setup packages nginx
+    queue-id: rar
+    sparrowdo:
+       docker: raku-alpine-repo
+       bootstrap: true
+       no_sudo: true
     timeout: 1000
     before: 
       -
