@@ -13,6 +13,7 @@ projects:
     hosts:
       -
         action: apk-setup packages nginx
+        title: build package
         sparrowdo:
           docker: raku-alpine-repo
           #bootstrap: true
@@ -20,5 +21,4 @@ projects:
     before: 
       -
         name: raku-alpine-docker
-        title: build package
 
