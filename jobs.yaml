@@ -3,17 +3,18 @@ projects:
     path: https://github.com/melezhik/raku-alpine-repo.git
     title: start docker
     action: run-docker
+    queue-id: rar
     sparrowdo:
       no_sudo: true
   raku-alpine-repo:
     path: https://github.com/melezhik/raku-alpine-repo.git
     title: main
-    queue-id: rar
     timeout: 1000
     hosts:
       -
         action: apk-setup packages nginx
-        title: build package
+        title: build packages
+        queue-id: rar
         sparrowdo:
           docker: raku-alpine-repo
           #bootstrap: true
