@@ -143,10 +143,10 @@ task-run "raku-Yamlish package", "sparkyci-tool-apkbuild", %(
 task-run "Cromtit package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Cromtit",
-  pkgver => "0.0.17",
+  pkgver => "0.0.18",
   pkgrel => 1,
   pkgdesc => "Run Tomtit scenarios as cron jobs and more.",
-  source => "https://360.zef.pm/C/RO/CROMTIT/ce20ab1628e41b8ba1c42fb818185cf2c6714cb2.tar.gz",
+  source => "https://360.zef.pm/C/RO/CROMTIT/9587310b68336c36965560776937a6e013b6c022.tar.gz",
   url => "https://github.com/melezhik/Cromtit",
   builddir => "dist",
   depends => "raku-Yamlish raku-Data-Dump",
