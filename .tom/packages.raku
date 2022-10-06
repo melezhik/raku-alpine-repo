@@ -202,3 +202,17 @@ task-run "Cromtit package", "sparkyci-tool-apkbuild", %(
   depends => "raku-Yamlish raku-Data-Dump",
   license => "Artistic-2.0",
 );
+
+task-run "OpenSSL package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-OpenSSL",
+  pkgver => "0.2.0",
+  pkgrel => 1,
+  pkgdesc => "OpenSSL bindings for Raku",
+  source => "https://github.com/sergot/openssl/archive/5b808930c923e3af221222b61289d3cf9b169ae9.zip",
+  source_extension => "zip",
+  url => "https://github.com/sergot/openssl",
+  builddir => "openssl-5b808930c923e3af221222b61289d3cf9b169ae9",
+  makedepends => "raku-JSON-Fast raku-PathTools",
+  license => "Artistic-2.0",
+);
