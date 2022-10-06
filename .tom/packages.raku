@@ -10,6 +10,18 @@ task-run "raku-Timezones-US package", "sparkyci-tool-apkbuild", %(
   license => "Artistic-2.0",
 );
 
+task-run "raku-Cro-Core package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-Cro-Core",
+  pkgver => "0.8.7",
+  pkgrel => 1,
+  pkgdesc => "The heart of the Cro library for building distributed systems in Raku, including pipeline composition and TCP support",
+  source => "https://cpan.metacpan.org/authors/id//J/JN/JNTHN/Perl6/cro-core-0.8.7.tar.gz",
+  url => "https://github.com/croservices/cro-core",
+  builddir => "cro-core-0.8.7",
+  license => "Artistic-2.0",
+);
+
 task-run "raku-Test-Async package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Test-Async",
