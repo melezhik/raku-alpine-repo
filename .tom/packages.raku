@@ -59,6 +59,19 @@ task-run "raku-Zef package", "sparkyci-tool-apkbuild", %(
   license => "Artistic-2.0",
 );
 
+task-run "raku-PathTools package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-PathTools",
+  pkgver => "0.2.0",
+  pkgrel => 1,
+  pkgdesc => "General purpose file system utility routines",
+  source => "https://github.com/ugexe/Raku-PathTools/archive/refs/tags/v0.2.0.tar.gz",
+  url => "https://github.com/ugexe/Raku-PathTools",
+  depends => "",
+  builddir => "Raku-PathTools-0.2.0/",
+  license => "Artistic-2.0",
+);
+
 task-run "raku-Base64 package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Base64",
