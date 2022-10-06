@@ -1,3 +1,15 @@
+task-run "raku-JSON-Fast package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-JSON-Fast",
+  pkgver => "0.17",
+  pkgrel => 1,
+  pkgdesc => "a naive imperative json parser in perl6, to evaluate performance against JSON::Tiny",
+  source => "https://cpan.metacpan.org/authors/id//T/TI/TIMOTIMO/Perl6/JSON-Fast-0.17.tar.gz",
+  url => "https://github.com/timo/json_fast",
+  builddir => "JSON-Fast-0.17",
+  license => "Artistic-2.0",
+);
+
 task-run "raku-Timezones-US package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Timezones-US",
