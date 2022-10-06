@@ -256,5 +256,6 @@ task-run "raku-OO-Monitors package", "sparkyci-tool-apkbuild", %(
   source => "https://cpan.metacpan.org/authors/id//J/JN/JNTHN/Perl6/OO-Monitors-1.1.1.tar.gz",
   url => "https://github.com/jnthn/oo-monitors",
   builddir => "OO-Monitors",
+  readme => "README.markdown",
   license => "Artistic-2.0",
 );
