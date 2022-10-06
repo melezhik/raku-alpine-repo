@@ -35,6 +35,19 @@ task-run "raku-Zef package", "sparkyci-tool-apkbuild", %(
   license => "Artistic-2.0",
 );
 
+task-run "raku-Base64 package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-Base64",
+  pkgver => "0.1.0",
+  pkgrel => 1,
+  pkgdesc => "Lazy base64 encoding and decoding routines",
+  source => "https://github.com/ugexe/Raku-Base64/archive/refs/tags/v0.1.0.tar.gz",
+  url => "https://github.com/ugexe/Raku-Base64",
+  depends => "",
+  builddir => "Raku-Base64-0.1.0",
+  license => "Artistic-2.0",
+);
+
 task-run "raku-Path-Util package", "sparkyci-tool-apkbuild", %(
   action => "create",
   pkgname => "raku-Path-Util",
