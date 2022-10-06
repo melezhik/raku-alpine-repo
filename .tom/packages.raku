@@ -246,3 +246,15 @@ task-run "raku-IO-Socket-Async-SSL package", "sparkyci-tool-apkbuild", %(
   depends => "raku-OpenSSL",
   license => "Artistic-2.0",
 );
+
+task-run "raku-OO-Monitors package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-OO-Monitors",
+  pkgver => "1.1.1",
+  pkgrel => 1,
+  pkgdesc => "Monitors with condition variables for Raku",
+  source => "https://cpan.metacpan.org/authors/id//J/JN/JNTHN/Perl6/OO-Monitors-1.1.1.tar.gz",
+  url => "https://github.com/jnthn/oo-monitors",
+  builddir => "OO-Monitors",
+  license => "Artistic-2.0",
+);
