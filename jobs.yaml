@@ -8,6 +8,7 @@ projects:
       no_sudo: true
   raku-alpine-repo:
     path: https://github.com/melezhik/raku-alpine-repo.git
+    trigger: true
     title: main
     timeout: 1000
     hosts:
