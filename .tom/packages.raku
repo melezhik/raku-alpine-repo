@@ -218,3 +218,31 @@ task-run "OpenSSL package", "sparkyci-tool-apkbuild", %(
   buildcommand => "/usr/share/rakudo/vendor/bin/zef build .",
   license => "Artistic-2.0",
 );
+
+task-run "IO-Socket-SSL package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-IO-Socket-SSL",
+  pkgver => "0.0.3",
+  pkgrel => 1,
+  pkgdesc => "IO::Socket::SSL for Perl 6 using OpenSSL",
+  source => "https://github.com/sergot/io-socket-ssl/archive/c4b128b1df2f6813bfb979a6607b0a3568a31f48.zip",
+  source_extension => "zip",
+  url => "https://github.com/sergot/io-socket-ssl",
+  builddir => "io-socket-ssl-c4b128b1df2f6813bfb979a6607b0a3568a31f48",
+  depends => "raku-OpenSSL",
+  license => "Artistic-2.0",
+);
+
+
+task-run "raku-IO-Socket-Async-SSL package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-IO-Socket-Async-SSL",
+  pkgver => "0.7.14",
+  pkgrel => 1,
+  pkgdesc => "Asynchronous TLS sockets in Raku",
+  source => "https://360.zef.pm/I/O_/IO_SOCKET_ASYNC_SSL/7e3b511ac023a2e1f28acfa71e8cf7a9aa585128.tar.gz",
+  url => "https://github.com/jnthn/p6-io-socket-async-ssl",
+  builddir => "dist",
+  depends => "raku-OpenSSL",
+  license => "Artistic-2.0",
+);
