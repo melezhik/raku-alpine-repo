@@ -1,8 +1,10 @@
 # raku-alpine-repo
 
 Repository of Alpine packages for Raku modules.
+
 ---
-AKA RAR - Raku Alpine Repository
+
+aka RAR - Raku Alpine Repository
 
 # Using Repo
 
