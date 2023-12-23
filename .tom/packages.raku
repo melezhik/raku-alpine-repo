@@ -294,6 +294,6 @@ task-run "raku-Raylib-Bindings package", "sparkyci-tool-apkbuild", %(
   source => "https://360.zef.pm/R/AY/RAYLIB_BINDINGS/2c6c0bb57475a06b6184acc9821c7960f07154d5.tar.gz",
   url => "https://github.com/vushu/raylib-raku",
   builddir => "raylib-raku-0.0.17",
-  makedepends => "raku-System-Query",
+  makedepends => "raku-Distribution-Builder-MakeFromJSON",
   license => "Artistic-2.0",
 );
