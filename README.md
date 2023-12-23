@@ -15,7 +15,7 @@ apk add wget --no-cache
 
 echo "https://alpine.sparrowhub.io" | tee -a /etc/apk/repositories
 
-wget -P /etc/apk/keys/ https://alpine.sparrowhub.io/builder-6335eaba.rsa.pub
+wget -P /etc/apk/keys/ https://alpine.sparrowhub.io/builder-6586e911.rsa.pub
 
 apk update
 ```
@@ -24,9 +24,12 @@ Look up packages:
 
 ```
 apk search raku
-
 apk add raku-Cromtit
 ```
+
+# Arch supported
+
+For now `aarch64` architecture is supported, due to Sparky workers runs on free Oracle clould that built on top ARM.
 
 # Rakudo version supported
 
