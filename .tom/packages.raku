@@ -269,7 +269,6 @@ task-run "raku-System-Query package", "sparkyci-tool-apkbuild", %(
   source => "https://360.zef.pm/S/YS/SYSTEM_QUERY/d254fdd0efd10a06bde98ee99b6ab1349532760a.tar.gz",
   url => "https://github.com/tony-o/p6-warthog/tree/master",
   builddir => ".",
-  readme => "README.markdown",
   license => "Artistic-2.0",
 );
 
