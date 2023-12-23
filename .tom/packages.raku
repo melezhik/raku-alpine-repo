@@ -295,5 +295,6 @@ task-run "raku-Raylib-Bindings package", "sparkyci-tool-apkbuild", %(
   url => "https://github.com/vushu/raylib-raku",
   builddir => "raylib-raku-0.0.17",
   makedepends => "raku-Distribution-Builder-MakeFromJSON",
+  depends => "raylib-dev",
   license => "Artistic-2.0",
 );
