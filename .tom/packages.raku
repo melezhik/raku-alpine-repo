@@ -259,3 +259,16 @@ task-run "raku-OO-Monitors package", "sparkyci-tool-apkbuild", %(
   readme => "README.markdown",
   license => "Artistic-2.0",
 );
+
+task-run "raku-System-Query package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-System-Query",
+  pkgver => "0.1.6",
+  pkgrel => 1,
+  pkgdesc => "A utility for collapsing JSON dependent upon certain environmental information",
+  source => "https://360.zef.pm/S/YS/SYSTEM_QUERY/d254fdd0efd10a06bde98ee99b6ab1349532760a.tar.gz",
+  url => "https://github.com/tony-o/p6-warthog/tree/master",
+  builddir => "System-Query",
+  readme => "README.markdown",
+  license => "Artistic-2.0",
+);
