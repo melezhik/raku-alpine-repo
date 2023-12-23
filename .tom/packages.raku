@@ -272,3 +272,16 @@ task-run "raku-System-Query package", "sparkyci-tool-apkbuild", %(
   readme => "README.markdown",
   license => "Artistic-2.0",
 );
+
+task-run "raku-Distribution-Builder-MakeFromJSON package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-Distribution-Builder-MakeFromJSON",
+  pkgver => "0.6",
+  pkgrel => 1,
+  pkgdesc => "Makefile based distribution builder",
+  source => "https://cpan.metacpan.org/authors/id//N/NI/NINE/Perl6/Distribution-Builder-MakeFromJSON-0.6.tar.gz",
+  url => "https://github.com/niner/Distribution-Builder-MakeFromJSON",
+  builddir => "Distribution-Builder-MakeFromJSON-0.6",
+  readme => "README.markdown",
+  license => "Artistic-2.0",
+);
