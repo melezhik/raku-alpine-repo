@@ -282,5 +282,6 @@ task-run "raku-Distribution-Builder-MakeFromJSON package", "sparkyci-tool-apkbui
   url => "https://github.com/niner/Distribution-Builder-MakeFromJSON",
   builddir => "Distribution-Builder-MakeFromJSON-0.6",
   readme => "README.markdown",
+  depends => "raku-System-Query",
   license => "Artistic-2.0",
 );
