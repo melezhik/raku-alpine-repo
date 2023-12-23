@@ -213,7 +213,7 @@ task-run "OpenSSL package", "sparkyci-tool-apkbuild", %(
   source_extension => "zip",
   url => "https://github.com/sergot/openssl",
   builddir => "openssl-5b808930c923e3af221222b61289d3cf9b169ae9",
-  depends => "libressl-dev",
+  #depends => "libressl-dev",
   makedepends => "raku-Zef raku-JSON-Fast raku-PathTools",
   buildcommand => "/usr/share/rakudo/vendor/bin/zef build .",
   license => "Artistic-2.0",
