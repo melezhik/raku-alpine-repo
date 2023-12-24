@@ -311,3 +311,16 @@ task-run "raku-ECMA262Regex package", "sparkyci-tool-apkbuild", %(
   license => "Artistic-2.0",
 );
 
+task-run "raku-RegexUtils package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-RegexUtils",
+  pkgver => "0.1.5",
+  pkgrel => 1,
+  pkgdesc => "A Raku module that provides helpers for Regex stuff both Perl5 and EMCA262Regex",
+  source => "https://360.zef.pm/R/EG/REGEXUTILS/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz",
+  url => "https://github.com/grizzlysmit/RegexUtils",
+  builddir => ".",
+  depends => "raku-ECMA262Regex",
+  license => "Artistic-2.0",
+);
+
