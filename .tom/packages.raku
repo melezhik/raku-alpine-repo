@@ -298,3 +298,16 @@ task-run "raku-Raylib-Bindings package", "sparkyci-tool-apkbuild", %(
   depends => "raylib-dev",
   license => "Artistic-2.0",
 );
+
+task-run "raku-ECMA262Regex package", "sparkyci-tool-apkbuild", %(
+  action => "create",
+  pkgname => "raku-ECMA262Regex",
+  pkgver => "1.1.3",
+  pkgrel => 1,
+  pkgdesc => "Module that provides support for ECMA262 regex notation",
+  source => "https://360.zef.pm/E/CM/ECMA262REGEX/3a4fe0e76818a36d56d4048a93244cb41c519368.tar.gz",
+  url => "https://github.com/edumentab/p6-ecma262regex",
+  builddir => "dist",
+  license => "Artistic-2.0",
+);
+
